@@ -1,7 +1,27 @@
 aid: mars-reel
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mars-reel.png
 name: Mars Reel
-description: Mars Reel is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mars Reel (Mars Reel Media Corp) is a Los Angeles-based youth sports media and
+  streaming company producing original basketball and soccer documentary series,
+  athlete training content, and original episodic shows (The Vault, Like Mike,
+  Game City). Its Mars Club membership provides premium on-demand video, and its
+  TFIOM (The Future Is On Mars) label runs a Shopify fashion storefront. Mars Reel
+  is a 500 Global portfolio company operating consumer web and streaming products.
+  As of this enrichment pass it publishes no public API, developer portal, OpenAPI
+  specification, or technical documentation; this profile captures its public
+  identity and consumer link surface only.
 url: https://raw.githubusercontent.com/api-evangelist/mars-reel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +31,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Sports
+- Media
+- Streaming
+- Video
+- Youth Sports
+- Entertainment
+- Membership
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/mars-reel-domain-security.yml
 - type: Website
+  url: https://marsreel.com
+- type: Website
+  name: TFIOM Store
   url: https://tfiom.com
+- type: Login
+  url: https://marsreel.com/login
+- type: SignUp
+  name: Mars Club Membership
+  url: https://marsreel.com/membership
+- type: PrivacyPolicy
+  url: https://marsreel.com/privacy-policy
+- type: TermsOfService
+  url: https://marsreel.com/terms
